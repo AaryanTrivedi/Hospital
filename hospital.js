@@ -75,7 +75,7 @@ app.delete("/", function(req, res){
 function check(){
     let verify = false;
     for (let i=0; i<users[0].kidneys.length; i++){
-        if(!users[0].kidneys[1].healthy){ //Cannot read properties of undefined (reading 'healthy')
+        if(!users[0].kidneys[i].healthy){ 
             verify = true;
         }
     }
